@@ -137,3 +137,20 @@ def get_market_share(current_share, switch_probablity):
 
 
 print(get_market_share([0.4, 0.6], [[0.8, 0.2], [0.1, 0.9]]))
+
+
+word_split = set_lines.split()
+word_set = set(word_split)
+
+#count of number of unique words
+print(len(word_set))
+
+my_letters = []
+for word in word_set:
+     for i in word:
+          if i not in my_letters:
+               my_letters.append(i)
+          else:
+               continue
+
+print(len(my_letters)) #count of unique letters
